@@ -19,7 +19,7 @@ public class Main {
         double imc = peso / (altura * altura);
 
         // Paso 8: Se imprime el resultado del cálculo anterior.
-        System.out.printf("Tu IMC es: %.2f " + imc);
+        System.out.printf("Tu IMC es: %.2f ", imc);
 
         // Paso 9: Se evalúa el diagnóstico basándonos en el resultado obtenido en el IMC.
         if (imc < 18.5){
