@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        int numSecret = 42;
+        int numSecret = (int) (Math.random() * 100) + 1;
         int numUser = 0;
         Scanner lector = new Scanner(System.in);
 
