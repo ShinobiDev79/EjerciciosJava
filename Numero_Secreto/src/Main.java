@@ -5,11 +5,14 @@ public class Main {
 
         int numSecret = (int) (Math.random() * 100) + 1;
         int numUser = 0;
+        int intentos = 0;
+
         Scanner lector = new Scanner(System.in);
 
         do{
             System.out.printf("Introduzca el número secreto: ");
             numUser = lector.nextInt();
+            intentos += 1;
             //System.out.printf("\n");
 
             if(numUser < numSecret){
@@ -22,6 +25,7 @@ public class Main {
 
             } else{
                 System.out.println("¡Felicidades! Has adivinado el número.");
+                System.out.printf("Te ha llevado %d intentos", intentos);
             }
         }while(numUser != numSecret);
 
