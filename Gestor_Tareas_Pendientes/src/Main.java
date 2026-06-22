@@ -20,13 +20,13 @@ public class Main {
         }
 
         //Paso 3: Se crea bucle para imprimir la lista de tareas introducida por el usuario.
-        for (int i = 0; i <= listaTareas.size(); i++) {
+
+        System.out.println("Esta es tu lista de tareas: ");
+
+        for (int i = 0; i < listaTareas.size(); i++) {
 
             String nuevaTarea = listaTareas.get(i);
 
-            if (i == 0){
-                System.out.println("Esta es tu lista de tareas: ");
-            }
             System.out.printf("%d. %s\n", i + 1, nuevaTarea);
         }
 
