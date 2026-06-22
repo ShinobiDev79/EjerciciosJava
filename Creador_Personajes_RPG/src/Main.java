@@ -23,5 +23,11 @@ public class Main {
         montaraz.setPuntosVida(-50.0);
         montaraz.mostrarInfo();
 
+        Mago mago = new Mago("Gandalf", 1, 100.0, 50);
+
+        mago.mostrarInfo();
+
+        mago.lanzarHechizo(mago.getNombre());
+
     }
 }

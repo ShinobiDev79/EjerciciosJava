@@ -1,6 +1,6 @@
 public class Personaje {
     //Atributos de la clase.
-    private String nombre;
+    private final String nombre;
     private int nivel;
     private double puntosVida;
 
