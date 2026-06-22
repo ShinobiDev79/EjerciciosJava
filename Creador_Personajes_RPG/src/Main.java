@@ -1,7 +1,7 @@
 public class Main {
     public static void main(String[] args) {
 
-        //Creamos la instancia heroe dándole un nombre y un nivel que son los atributos necesarios.
+        //Creamos la instancia montaraz dándole un nombre y un nivel que son los atributos necesarios.
         Personaje montaraz = new Personaje("Aragorn", 1, 100.0);
 
         //A través de esta función imprimiremos por pantalla los datos iniciales del personaje.
@@ -17,6 +17,10 @@ public class Main {
         montaraz.subirNivel();
 
         //Al final mostramos los datos actualizados del personaje.
+        montaraz.mostrarInfo();
+
+        //Búnker del personaje, crearémos una forma de asegurar que no pueda tomar valores inferiores a 0.0 o mayores a 100.0
+        montaraz.setPuntosVida(-50.0);
         montaraz.mostrarInfo();
 
     }

@@ -1,13 +1,35 @@
 public class Personaje {
     //Atributos de la clase.
-    String nombre;
-    int nivel;
-    double puntosVida;
+    private String nombre;
+    private int nivel;
+    private double puntosVida;
 
     //Constructor de la clase.
     public Personaje(String nombre, int nivel, double puntosVida){
         this.nombre = nombre;
         this.nivel = nivel;
+        this.puntosVida = puntosVida;
+    }
+
+    //Getters de la clase.
+    public String getNombre() {
+        return nombre;
+    }
+    public int getNivel() {
+        return nivel;
+    }
+    public double getPuntosVida() {
+        return puntosVida;
+    }
+    //Setters de la clase con regla de seguridad.
+    public void setPuntosVida(double puntosVida) {
+
+        if(puntosVida < 0.0){
+            puntosVida = 0.0;
+        } else if (puntosVida > 100.0) {
+            puntosVida = 100.0;
+        }
+
         this.puntosVida = puntosVida;
     }
 
@@ -21,7 +43,7 @@ public class Personaje {
 
     //Función al recibir daño el personaje.
     public void recibirDanio (double cantidad){
-        puntosVida = puntosVida - cantidad;
+        setPuntosVida(this.puntosVida - cantidad);
         System.out.printf("%s, ha recibido %.2f punto de daño!", nombre, cantidad);
         System.out.println(" ");
     }
