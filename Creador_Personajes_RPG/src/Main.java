@@ -23,11 +23,13 @@ public class Main {
         montaraz.setPuntosVida(-50.0);
         montaraz.mostrarInfo();
 
+        //Se crea un nuevo personaje Mago que hereda de la clase Personaje, pero también tiene sus atributos y métodos propios.
         Mago mago = new Mago("Gandalf", 1, 100.0, 50);
 
+        //Mostramos la información del personaje Mago.
         mago.mostrarInfo();
 
+        //Se lanza la función específica para el personaje Mago.
         mago.lanzarHechizo(mago.getNombre());
-
     }
 }
