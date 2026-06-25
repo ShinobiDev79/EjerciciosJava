@@ -1,4 +1,4 @@
-public class Personaje {
+public abstract class Personaje {
     //Atributos de la clase.
     private final String nombre;
     private int nivel;
@@ -57,4 +57,6 @@ public class Personaje {
         System.out.println(" ");
         System.out.println(nombre + ", ha subido al nivel " + nivel + " y se restauró su vida.");
     }
+
+    public abstract void atacar();
 }

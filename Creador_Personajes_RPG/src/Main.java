@@ -6,16 +6,19 @@ public class Main {
         //Creamos una lista dinámica para nuestro ejército.
         ArrayList<Personaje> ejercito = new ArrayList<>();
 
-        Personaje montaraz = new Personaje("Aragorn", 2, 64.5);
-        ejercito.add(montaraz);
+        Guerrero guerrero1 = new Guerrero("Aragorn", 2, 64.5);
+        ejercito.add(guerrero1);
         Mago magoGris = new Mago("Gandalf", 2, 100, 40 );
         ejercito.add(magoGris);
-        Personaje guerrero = new Personaje("Boromir", 1, 80);
-        ejercito.add(guerrero);
+        Guerrero guerrero2 = new Guerrero("Boromir", 1, 80);
+        ejercito.add(guerrero2);
         Mago magoBlanco = new Mago("Saruman", 5,100,50);
         ejercito.add(magoBlanco);
 
-        for(int i = 0; i < ejercito.size(); i++){ejercito.get(i).mostrarInfo();}
+        for(int i = 0; i < ejercito.size(); i++){
+            ejercito.get(i).mostrarInfo();
+            ejercito.get(i).atacar();
+        }
 
         /*
         //Creamos la instancia montaraz dándole un nombre y un nivel que son los atributos necesarios.

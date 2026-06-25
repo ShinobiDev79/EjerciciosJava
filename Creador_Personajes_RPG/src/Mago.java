@@ -21,4 +21,9 @@ public class Mago extends Personaje{
         super.mostrarInfo();
         System.out.println("Maná actual: " + mana);
     }
+
+    @Override
+    public void atacar(){
+        System.out.println("!" + getNombre() + ", ataca con un rayo de energía arcana!");
+    }
 }
