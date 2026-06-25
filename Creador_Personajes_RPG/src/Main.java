@@ -1,6 +1,23 @@
+import java.util.ArrayList;
+
 public class Main {
     public static void main(String[] args) {
 
+        //Creamos una lista dinámica para nuestro ejército.
+        ArrayList<Personaje> ejercito = new ArrayList<>();
+
+        Personaje montaraz = new Personaje("Aragorn", 2, 64.5);
+        ejercito.add(montaraz);
+        Mago magoGris = new Mago("Gandalf", 2, 100, 40 );
+        ejercito.add(magoGris);
+        Personaje guerrero = new Personaje("Boromir", 1, 80);
+        ejercito.add(guerrero);
+        Mago magoBlanco = new Mago("Saruman", 5,100,50);
+        ejercito.add(magoBlanco);
+
+        for(int i = 0; i < ejercito.size(); i++){ejercito.get(i).mostrarInfo();}
+
+        /*
         //Creamos la instancia montaraz dándole un nombre y un nivel que son los atributos necesarios.
         Personaje montaraz = new Personaje("Aragorn", 1, 100.0);
 
@@ -30,6 +47,6 @@ public class Main {
         mago.mostrarInfo();
 
         //Se lanza la función específica para el personaje Mago.
-        mago.lanzarHechizo();
+        mago.lanzarHechizo();*/
     }
 }
