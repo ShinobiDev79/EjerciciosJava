@@ -9,8 +9,16 @@ public class Mago extends Personaje{
     }
 
     //Función solo para este personaje que consume 10 de maná.
-    public void lanzarHechizo(String nombre){
+    public void lanzarHechizo(){
         mana -= 10;
-        System.out.printf("%s ha lanzado una bola de fuego! Mana restante: %d", nombre, mana);
+        System.out.println(" ");
+        System.out.println("!" + getNombre() + ", ha lanzado una bola de fuego! Mana restante: " + mana);
+    }
+
+    //Sobrescritura de la función mostrarInfo de la clase Personaje para utilizarla en una versión mejorada en la subclase Mago.
+    @Override
+    public void mostrarInfo(){
+        super.mostrarInfo();
+        System.out.println("Maná actual: " + mana);
     }
 }
