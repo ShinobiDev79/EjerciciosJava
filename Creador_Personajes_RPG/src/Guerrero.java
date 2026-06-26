@@ -16,6 +16,7 @@ public class Guerrero extends Personaje implements Comerciante{
 
     @Override
     public void comprar(String item, int precio){
-        System.out.println(getNombre() + ", ha comprado " + item + " por " + precio + " monedas de oro! Oro restante: " + (oro-precio));
+        this.oro -= precio;
+        System.out.println(getNombre() + ", ha comprado " + item + " por " + precio + " monedas de oro! Oro restante: " + this.oro);
     }
 }
