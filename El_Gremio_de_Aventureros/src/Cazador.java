@@ -1,7 +1,7 @@
 public class Cazador extends Aventurero{
 
-    public Cazador(String nombre, int misionesCompletadas, double salario) {
-        super(nombre, misionesCompletadas, salario);
+    public Cazador(String nombre, int misionesCompletadas) {
+        super(nombre, misionesCompletadas);
     }
 
     public double calcularSalario(){

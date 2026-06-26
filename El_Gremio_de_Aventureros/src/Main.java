@@ -5,9 +5,9 @@ public class Main {
 
         ArrayList<Aventurero> gremio = new ArrayList<>();
 
-        Cazador cazador = new Cazador("Gretel", 2, 0.0);
+        Cazador cazador = new Cazador("Gretel", 2);
         gremio.add(cazador);
-        Caballero caballero = new Caballero("Hansel",4, 0.0);
+        Caballero caballero = new Caballero("Hansel",4);
         gremio.add(caballero);
 
         for(int i=0; i < gremio.size(); i++) gremio.get(i).mostrarInfo();

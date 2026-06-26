@@ -1,7 +1,7 @@
 public class Caballero extends Aventurero implements Escudero{
 
-    public Caballero(String nombre, int misionesCompletadas, double salario) {
-        super(nombre, misionesCompletadas, salario);
+    public Caballero(String nombre, int misionesCompletadas) {
+        super(nombre, misionesCompletadas);
     }
 
     public double calcularSalario(){

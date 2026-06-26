@@ -2,13 +2,11 @@ public abstract class Aventurero {
     //Atributos de la clase.
     private final String nombre;
     private int misionesCompletadas;
-    private double salario;
 
     //Constructor de la clase.
-    public Aventurero(String nombre, int misionesCompletadas, double salario) {
+    public Aventurero(String nombre, int misionesCompletadas) {
         this.nombre = nombre;
         this.misionesCompletadas = misionesCompletadas;
-        this.salario = salario;
     }
 
     //Getters de la clase.
@@ -20,20 +18,12 @@ public abstract class Aventurero {
         return misionesCompletadas;
     }
 
-    public double getSalario() {
-        return salario;
-    }
-
     //Setters de la clase.
     public void setMisionesCompletadas(int misionesCompletadas) {
         if(misionesCompletadas < 0){
             misionesCompletadas = 0;
         }
         this.misionesCompletadas = misionesCompletadas;
-    }
-
-    public void setSalario(double salario) {
-        this.salario = salario;
     }
 
     //Función mostrar datos de los personajes.
