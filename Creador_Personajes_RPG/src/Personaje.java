@@ -58,5 +58,6 @@ public abstract class Personaje {
         System.out.println(nombre + ", ha subido al nivel " + nivel + " y se restauró su vida.");
     }
 
+    //Función abstracta que será utilizada por las subclases Mago y Guerrero.
     public abstract void atacar();
 }

@@ -6,16 +6,21 @@ public class Main {
         //Creamos una lista dinámica para nuestro ejército.
         ArrayList<Personaje> ejercito = new ArrayList<>();
 
-        Guerrero guerrero1 = new Guerrero("Aragorn", 2, 64.5);
+        //Introducimos los datos de nuestros personajes para la lista dinámica creada anteriormente.
+        Guerrero guerrero1 = new Guerrero("Aragorn", 2, 64.5, 100);
         ejercito.add(guerrero1);
         Mago magoGris = new Mago("Gandalf", 2, 100, 40 );
         ejercito.add(magoGris);
-        Guerrero guerrero2 = new Guerrero("Boromir", 1, 80);
+        Guerrero guerrero2 = new Guerrero("Boromir", 1, 80, 100);
         ejercito.add(guerrero2);
         Mago magoBlanco = new Mago("Saruman", 5,100,50);
         ejercito.add(magoBlanco);
 
+        //Bucle que imprimirá por pantalla los datos de cada uno de los diferentes personajes y su ataque principal.
         for(int i = 0; i < ejercito.size(); i++){
+            if(i==0){
+                guerrero1.comprar("Espada de Mithril", 45);
+            }
             ejercito.get(i).mostrarInfo();
             ejercito.get(i).atacar();
         }

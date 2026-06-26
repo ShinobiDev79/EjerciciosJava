@@ -22,6 +22,7 @@ public class Mago extends Personaje{
         System.out.println("Maná actual: " + mana);
     }
 
+    //Sobrescritura de la función atacar de la clase abstracta Personaje para utilizarla en la subclase Mago.
     @Override
     public void atacar(){
         System.out.println("!" + getNombre() + ", ataca con un rayo de energía arcana!");
